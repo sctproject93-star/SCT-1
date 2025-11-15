@@ -366,3 +366,104 @@ footer {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Tombol WhatsApp */
+#whatsapp-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: 0.3s;
+}
+#whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+#whatsapp-button img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Kotak Chat */
+#chat-box {
+  position: fixed;
+  bottom: 100px;
+  right: 25px;
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#chat-box.hidden {
+  display: none;
+}
+
+/* Header */
+.chat-header {
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.chat-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.chat-header p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#close-chat {
+  margin-left: auto;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Isi Chat */
+.chat-content {
+  padding: 15px;
+}
+
+.chat-content p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+#start-chat {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#start-chat:hover {
+  background-color: #1ebe5d;
+}
