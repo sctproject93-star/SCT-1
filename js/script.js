@@ -101,3 +101,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const whatsappButton = document.getElementById("whatsapp-button");
+const chatBox = document.getElementById("chat-box");
+const closeChat = document.getElementById("close-chat");
+const startChat = document.getElementById("start-chat");
+
+// Ganti nomor WhatsApp kamu di sini
+const phoneNumber = "6283198520630"; // Format internasional tanpa + atau 0
+const defaultMessage = "Halo, saya tertarik dengan layanan Anda.";
+
+startChat.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+
+// Event untuk buka / tutup chat
+whatsappButton.addEventListener("click", () => {
+  chatBox.classList.toggle("hidden");
+});
+
+closeChat.addEventListener("click", () => {
+  chatBox.classList.add("hidden");
+});
